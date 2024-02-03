@@ -18,7 +18,7 @@
   // Redirect with URL parameters
   function redirectWithParams() {
     var queryParams = getUrlParams();
-    var redirectUrl = 'http://example.com'; // Replace with your desired URL
+    var redirectUrl = 'http://localhost:3000/api/integrations/slack/callback'; // Replace with your desired URL
     var redirectParams = new URLSearchParams(queryParams).toString();
     var finalRedirectUrl = redirectUrl + '?' + redirectParams;
     window.location.href = finalRedirectUrl;
